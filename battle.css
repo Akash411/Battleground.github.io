@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+h1{
+    font-family: 'Chelsea Market', cursive;
+    font-size: 40px;
+}
+.navbar{
+    height: 68px;
+    background: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 415px;
+}
+.menu img{
+    max-width: 127px;
+    padding: 0 10px;
+}
+.menu ul{
+    display: flex;
+    width: 55%;
+    justify-content: space-between;
+}
+.active{
+    color: orange !important;
+}
+.menu ul a{
+    text-decoration: none;
+    font-size: 23px;
+    color: grey;
+    transition: color 0.3s ease-in-out;
+}
+.menu ul a:hover{
+    color: white !important;
+}
+
+.externalIcon{
+    margin-left: 3px;
+    font-size: 14px;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    width: 180px;
+}
+.icon ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.icon ul a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    transition: color 0.3s;
+}
+.icon ul a:hover{
+    color: orange;
+}
+.mainbody{
+    margin-top: 68px;
+    height: 100vh;
+    background-image: url(image/3.png);
+  background-size: 100% 100%;
+}
+.mainbody h1{
+    margin: -3px;
+    font-size: 140px;
+}
+.mainbody img:first-child{
+    width: 680px;
+    margin: 34px 40px 0px 40px;
+/*    border: 2px solid white;*/
+/*    position: sticky;*/
+/*    top: 19px;*/
+}
+.mainbody .btn{
+    width: 370px;
+    height: 70px;
+    border: none;
+    margin:0 0 15px 40px;
+    cursor: pointer; 
+        position: relative; 
+
+}
+.btn1{
+    top: -134px;
+    font-size: 42px;
+    font-weight: bold;
+    background: #ECA800;
+    color: #2C2F3F;
+}
+.btn2{
+    top: 120px;
+    font-size: 23px;
+    color: white;
+    background: #2C2F3F;
+}
+.preRegister{
+    width: 100%;
+    text-align: center;
+    background: #E1E1E1;
+    padding: 90px 0;
+}
+.preRegister h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.reward{
+    background-color: #242D37;
+    text-align: center;
+    padding: 100px 0 45px 0;
+    color: white;
+}
+.reward h1{
+    font-size: 55px;
+}
+.reward p{
+    font-size: 25px;
+}
+.reward span{
+    font-size: 35px;
+    color: #ECA800;
+    font-weight: bold;
+}
+.reward img{
+    margin-top: 30px;
+}
+.news{
+    background-image: linear-gradient(#F9F9F9,#F9F9F9,#E2E2E2,#DDDDDD);
+    text-align: center;
+    padding: 100px 0;
+    font-size: 40px;
+}
+.row{
+    display: flex;
+    width: 100%;  
+    justify-content: space-evenly;
+    padding: 30px 58px;
+}
+.row .col{
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+/*
+.rcol:hover{
+    
+}
+*/
+.row .col img{
+    width: 390px;
+}
+.news figcaption{
+    font-size: 20px;
+    text-align: left;
+    padding: 30px 20px;
+    line-height: 100%;
+}
+.row .col span{
+    font-size: 18px;
+    text-align: left;
+    color: grey;
+    margin: -10px 0 10px 20px;
+}
+.view{
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid lightgrey;
+    color: grey;
+    padding: 10px 60px;
+}
+.view:hover{
+    color: black;
+    border: 2px solid black;
+}
+.social{
+    padding: 100px 0;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ece8e829;    
+}
+.social ul{
+    display: flex;
+    width: 160px;
+    padding: 5px 0;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.social ul a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 14px;
+    border-radius: 100%;
+    color: white;
+    background: black; 
+}
+.social ul a:hover{
+    background: #F2A900;
+}
+.social figcaption{
+    font-size: 18px;
+    line-height: 150%;
+    color: #606060;
+    padding: 20px 20px;
+}
+.play{
+    background-image: url(image/backfooter.jpg);
+    background-size: 100% 100%;
+    height: 380px;    
+    padding-top: 30px;
+    text-align: center;
+    font-size: 36px;
+    line-height: 100%;
+    font-weight: bold;
+}
+.play .battle{
+    margin-top: 20px;
+}
+.play .google{
+    position: relative;
+    top: -32px;
+    left: -11px;
+    width: 165px;
+/*    cursor: grab;*/
+}
+
+footer{
+    text-align: center;
+    height: 130px;
+    width: 100%;
+    padding-top: 27px;
+    background: black;
+    color: grey;
+    line-height: 150%;
+}
+footer img{
+    width: 160px;
+}
+footer a{
+    text-decoration: none;
+    color: grey;
+}
+footer a:hover{
+    color: white;
+}
